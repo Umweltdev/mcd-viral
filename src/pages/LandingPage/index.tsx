@@ -64,7 +64,7 @@ const SimulationSection = ({ visibleSections }:{visibleSections: any}) => {
           </p>
         </div>
         
-        <div className="bg-white rounded-3xl shadow-xl p-8 max-w-5xl mx-auto">
+        <div className="sm:bg-white sm:rounded-3xl sm:shadow-xl p-1 max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Left Side - Controls */}
             <div className="space-y-6">
