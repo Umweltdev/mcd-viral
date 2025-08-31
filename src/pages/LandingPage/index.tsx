@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Check, X, Shield, Zap, Target, BarChart3, Clock, RefreshCw, Lock, TrendingUp, AlertCircle, Star, Mail, Phone, ArrowRight, DollarSign, Activity, AlertTriangle } from 'lucide-react';
+import { ChevronDown, Check, X, Shield, Zap, Target, BarChart3, Clock, RefreshCw, Lock, TrendingUp, AlertCircle, Star, ArrowRight, DollarSign, Activity, AlertTriangle } from 'lucide-react';
 import "./index.module.css"
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
@@ -17,7 +17,7 @@ const SimulationSection = ({ visibleSections }:{visibleSections: any}) => {
   const priceAdjustment = Math.min(15, Math.max(-5, roasGap * 5)); // Cap at 15% increase, 5% decrease
   const adjustedPrice = basePrice * (1 + priceAdjustment / 100);
   const projectedRevenue = revenue * (1 + (priceAdjustment * 0.7) / 100); // Assume 70% retention with price increase
-  const newRoas = projectedRevenue / adSpend;
+ // const newRoas = projectedRevenue / adSpend;
   const profitMargin = ((projectedRevenue - adSpend) / projectedRevenue * 100).toFixed(1);
   const originalMargin = ((revenue - adSpend) / revenue * 100).toFixed(1);
   
